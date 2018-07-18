@@ -1,7 +1,6 @@
 <?php
 
 const MW_CONFIG_FILE =  __DIR__. '/LocalSettings.php';
-const MW_VENDOR_DIR = __DIR__ . '/vendor/';
 const MW_CONFIG_CALLBACK = 'mwProjectDefaultConfig';
 
 function mwProjectDefaultConfig() {
@@ -22,4 +21,7 @@ function mwProjectDefaultConfig() {
   }
 
   require_once MW_CONFIG_FILE;
+
+  // Any nely defined variables should return to the global scope.
+  $GLOBALS = get_defined_vars();
 }
