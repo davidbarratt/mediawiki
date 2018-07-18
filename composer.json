@@ -35,7 +35,8 @@
                         "mediawiki/core": [
                             {
                                 "title": "Allow the vendor directory to be configurable",
-                                "url": "./patches/e35bdfc.diff"
+                                "url": "https://phabricator.wikimedia.org/rMWe35bdfc692b43f3dd3ca0f265529026d84217aff?diff=1",
+                                "sha1": "df8cd9589b9597ab3d787c9f8ea356277b359b46"
                             }
                         ]
                     }
